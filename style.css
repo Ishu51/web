@@ -1,0 +1,81 @@
+
+
+/* Base Styles for Desktop */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: blue; /* Default color for desktop */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+section {
+    flex: 1 1 30%;
+    text-align: center;
+    padding: 10px;
+    background-color: #e3e3e3; /* Default color for desktop sections */
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Tablet Styles (992px and below) */
+@media (max-width: 992px) {
+    body {
+        background-color: #add8e6; /* Light blue for tablets */
+    }
+
+    .content {
+        gap: 10px;
+    }
+
+    section {
+        flex: 1 1 45%;
+        background-color: #d3d3d3; /* Light gray for tablet sections */
+    }
+}
+
+/* Mobile Styles (600px and below) */
+@media (max-width: 600px) {
+    body {
+        background-color: #ffefd5; /* Light peach for mobile */
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    section {
+        flex: 1 1 100%;
+        background-color: palevioletred; /* Light pink for mobile sections */
+    }
+
+    section img {
+        max-width: 80%;
+        margin: 0 auto 15px auto;
+    }
+}
